@@ -1,0 +1,2 @@
+Department,Semester,Courses,Labs
+department_name,semester_number,"courses_in_this_department_and_semester_EXCEPT LABS: enter all courses here, each course separated by commas","only_lab_courses_in_this_department_and_semester: enter all labs here, each lab separated by commas"

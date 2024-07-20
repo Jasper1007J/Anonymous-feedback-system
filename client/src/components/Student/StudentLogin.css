@@ -1,0 +1,259 @@
+
+
+.bg-icon {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    display: none;
+
+    max-width: 100%;
+}
+
+.student-login {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-image: url(/public/studentloginbg.jpg);
+    filter: brightness(90%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    letter-spacing: normal;
+    padding: 9rem 18rem;
+}
+
+.student-login-text {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    font-family: inherit;
+    color: rgb(249, 224, 191);
+    z-index: 1;
+}
+
+.student-login-wrapper {
+    align-self: center;
+    display: flex;
+    
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 0 1rem 0;
+}
+
+.student-input-rollno,
+.roll-number {
+    position: relative;
+    z-index: 1;
+}
+
+.roll-number {
+    width: 100%;
+    letter-spacing: 0.1em;
+    font-size: large;
+    color:rgb(251, 242, 230);
+    display: inline-block;
+}
+
+.student-input-rollno {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    font-size: large;
+    border-radius: 6px;
+    font-family: var(--font-alike);
+    outline:none;
+    border: none;
+    background-color: rgb(253, 246, 236);
+}
+
+.student-input-rollno::placeholder{
+    font-size: medium;
+}
+.student-input-rollno::placeholder::after{
+    background-color: rgb(253, 246, 236);
+}
+.student-input-rollno::placeholder::before{
+    border-color: rgb(253, 246, 236);
+    
+}
+
+
+.roll-number-parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0.538rem;
+    gap: 1.181rem;
+    font-size: var(--font-size-7xl);
+}
+
+.student-submit1 {
+    position: relative;
+    font-size: var(--font-size-9xl);
+    font-family: var(--font-alice);
+    color: var(--color-white);
+    text-align: left;
+    display: inline-block;
+    min-width: 5.688rem;
+}
+
+.student-submit {
+    cursor: pointer;
+    border: 0;
+    padding: 0.144rem 0.7rem;
+    background-color: var(--color-darkslategray-200);
+    flex-direction: row;
+    z-index: 2;
+}
+
+.student-submit1:hover {
+    color: #000;
+}
+
+.student-submit1:active, .student-submit:active {
+    background-color: var(--color-dimgray);
+    color: white;
+}
+
+.student-submit,
+.student-submit-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.studen-submit-wrapper {
+    flex-direction: row;
+    padding: 0 var(--padding-61xl) 0 var(--padding-59xl);
+}
+
+
+.student-rectangle-parent {
+    display: flex;
+    align-items: center;
+}
+
+
+.student-rectangle-parent {
+    height: 27rem;
+    width: 25rem;
+    border-radius: var(--br-6xl);
+    background-color: var(--color-gray-200);
+    box-shadow: 40px 40px 40px rgba(0, 0, 0,0.5);
+    backdrop-filter: blur(64px);
+    border: 0.2px solid var(--color-silver-200);
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3rem 2.5rem;
+    gap: 3.7rem;
+    max-width: 100%;
+    z-index: 1;
+    text-align: left;
+    font-size: var(--font-size-25xl);
+    color: var(--color-white);
+    font-family: var(--font-alice);
+}
+
+.btn41-43 {
+    padding: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    width: 10rem;
+    font-size: 1.3rem;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius:10px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .btn-42 {
+    border: 2px solid rgb(249, 224, 191);
+    z-index: 1;
+    border-radius:10px;
+    font-weight: 600;
+    color: rgb(249, 224, 191);
+  }
+  
+  .btn-42:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius:10px;
+    background: rgb(249, 224, 191);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-42:hover {
+    color: rgb(0, 0, 0);
+    border-radius:10px;
+  }
+  
+  .btn-42:hover:after {
+    top: 0;
+    border-radius:8px;
+    height: 100%;
+  }
+  
+  .btn-42:active {
+    top: 2px;
+    border-radius:8px;
+  }
+
+@media screen and (max-width: 750px) {
+    .student-login-text {
+        font-size: var(--font-size-16xl);
+    }
+
+
+}
+
+@media screen and (max-width: 675px) {
+    .student-rectangle-parent {
+        gap: 1.875rem 3.7rem;
+        padding-top: var(--padding-26xl);
+        padding-bottom: var(--padding-49xl);
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .student-login-text {
+        font-size: var(--font-size-7xl);
+    }
+
+    .roll-number {
+        font-size: var(--font-size-2xl);
+    }
+
+    .student-submit1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .student-submit-wrapper {
+        padding-left: var(--padding-xl);
+        padding-right: var(--padding-xl);
+        box-sizing: border-box;
+    }
+
+}

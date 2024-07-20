@@ -1,0 +1,74 @@
+
+.hod-dashboard-text {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    font-size: 2rem;
+    height: 4rem;
+    display: inline;
+    flex-shrink: 0;
+    white-space: nowrap;
+    max-width: 100%;
+    z-index: 2;
+  }
+  
+  .hod-navbar-parent.sidebar-expanded {
+    margin-left: 20rem; /* Adjust the value based on the width of the expanded menu */
+  }
+  
+  .hod-dashboard,
+  .hod-navbar-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .hod-navbar-parent {
+    width: 100%;
+    height: 5rem;
+    align-self: stretch;
+    padding: 1rem 7rem;
+    background-color: var(--color-darkslategray-400);
+    flex-direction: row;
+    box-sizing: border-box;
+    gap: 7.625rem;
+    max-width: 100%;
+    z-index: 1;
+    text-align: left;
+    font-size: 2.938rem;
+    color: var(--color-white);
+    font-family: var(--font-alike);
+  }
+  
+  .hod-dashboard {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #121212;
+    overflow: hidden;
+    flex-direction: column;
+    letter-spacing: normal;
+  }
+
+  .faculty-wise-feedbacks {
+    position: absolute;
+    top: 6rem; /* Adjust based on your header height */
+    left: 8rem;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 1; /* Ensure it's above the admin-dashboard */
+  }
+  
+  @media screen and (max-width: 825px) {
+    .hod-navbar-parent {
+      padding-left: 7rem;
+      box-sizing: border-box;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .hod-navbar-parent {
+      padding-left: 7rem;
+    }
+  }

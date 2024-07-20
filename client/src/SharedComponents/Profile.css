@@ -1,0 +1,96 @@
+.admin-profile-container {
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Box shadow for depth */
+}
+
+.admin-profile-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-profile-container label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.admin-profile-container .profile-entities {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 100%;
+}
+
+.admin-profile-container .profile-entities:focus {
+    outline: none;
+}
+
+.admin-profile-container button[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    /* Green background color */
+    color: #fff;
+    /* White text color */
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.admin-profile-container button[type="submit"]:hover {
+    background-color: #45a049;
+    /* Darker green hover color */
+}
+
+.error-message {
+    color: #ff6961;
+    /* Red error message color */
+    margin-top: 10px;
+}
+
+.admin-profile-container button.process-feedback-btn, button.access-to-students-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Adjust color as needed */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust margin as needed */
+    width: 100%;
+}
+
+.admin-profile-container button.process-feedback-btn:hover, button.access-to-students-btn:hover {
+    background-color: #0056b3; /* Adjust hover color as needed */
+}
+
+.admin-profile-container p {
+    color: yellow;
+}
+
+
+.admin-profile-container button.delete-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000; /* Adjust color as needed */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust margin as needed */
+    width: 100%;
+}
+
+.admin-profile-container button.delete-button:hover {
+    background-color: #b30000; /* Adjust hover color as needed */
+}

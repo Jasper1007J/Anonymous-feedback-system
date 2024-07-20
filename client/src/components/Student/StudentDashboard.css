@@ -1,0 +1,83 @@
+.student-dashboard {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #121212;
+  /* background-image: url(/public/bg.jpg); */
+  overflow: hidden;
+  flex-direction: column;
+  letter-spacing: normal;
+}
+
+.feedback-form-overlay {
+  position: fixed;
+  top: 6rem;
+  left: 6rem;
+  width: 100%;
+  height: calc(100% - 6rem);
+  overflow: auto;
+  z-index: 2; /* Ensure it's above other content */
+}
+
+
+.student-dashboard-text {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    font-size: 2rem;
+    height: 4rem;
+    display: inline;
+    font-weight: 500;
+    flex-shrink: 0;
+    white-space: nowrap;
+    max-width: 100%;
+    z-index: 2;
+  }
+  .student-dashboard-text span{
+    color: rgb(244, 237, 198);
+  }
+  
+  .student-navbar-parent.sidebar-expanded {
+    margin-left: 20rem; /* Adjust the value based on the width of the expanded menu */
+  }
+  
+  .student-dashboard,
+  .student-navbar-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .student-navbar-parent {
+    background: rgb(38,36,36);
+    background: linear-gradient(90deg, rgba(38,36,36,1) 0%, rgba(92,88,88,1) 51%, rgba(46,46,46,1) 100%);
+    width: 100%;
+    height: 5rem;
+    align-self: stretch;
+    padding: 1rem 7rem;
+    background-color: var(--color-darkslategray-400);
+    flex-direction: row;
+    box-sizing: border-box;
+    gap: 7.625rem;
+    max-width: 100%;
+    z-index: 1;
+    text-align: left;
+    font-size: 2.938rem;
+    color: var(--color-white);
+    font-family: var(--font-alike);
+  }
+  
+
+  
+  @media screen and (max-width: 825px) {
+    .student-navbar-parent {
+      padding-left: 7rem;
+      box-sizing: border-box;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .student-navbar-parent {
+      padding-left: 7rem;
+    }
+  }

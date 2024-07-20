@@ -1,0 +1,63 @@
+.add-data-main-component {
+    position: absolute;
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.add-data-component {
+    margin: 1.5rem 1.5rem;
+    width: 25rem;
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(136, 129, 129, 0.74);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: 0.3s linear;
+    background-color: #f9f9f9;
+}
+
+.add-data-component:hover{
+    transform: scale(1.01);
+    background-color: #ccc;
+}
+.add-data-component input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.add-data-component button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-data-component button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 1400px) {
+    .add-data-main-component {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+  }
+  
+
+@media screen and (max-width: 800px) {
+    .add-data-main-component {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .add-data-main-component {
+        display: flex;
+        flex-direction: column;
+    }
+  }

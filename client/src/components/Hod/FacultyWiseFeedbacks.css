@@ -1,0 +1,47 @@
+.faculty-wise-feedbacks-main-container {
+    position: absolute;
+    color: white;
+}
+
+h2 {
+    margin: 1rem 0 2rem 0;
+}
+
+.faculties-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Adjust button styles */
+.faculty-button {
+    width: 20rem;
+    padding: 0.5rem 1rem;
+    background-color: #124e66;
+    color: rgb(249, 243, 76);
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px #124e66; /* Added shadow */
+}
+
+/* Hover effect for buttons */
+.faculty-button:hover {
+    background-color: var(--color-white);
+    color: #124e66;
+}
+
+/* Active/focused effect for buttons */
+.faculty-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #124366;
+}
+
+
+.course-feedback-container {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid white;
+}

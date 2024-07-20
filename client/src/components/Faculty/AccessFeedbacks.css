@@ -1,0 +1,32 @@
+.access-feedbacks-main-container {
+    margin: 2rem 3rem;
+    position: absolute;
+    color: rgb(248, 84, 111);
+    padding-bottom: 2rem;
+}
+
+h4 {
+    color: #ff7b00;
+}
+
+.course-feedback-container {
+    margin-bottom: 5rem;
+}
+
+.chart-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    z-index: 1;
+    background-color: white;
+}
+
+.bar-chart {
+    max-width: 100%;
+    z-index: 1;
+}
+
+.download-report {
+    width: 20rem;
+    margin: 2rem 0;
+}
